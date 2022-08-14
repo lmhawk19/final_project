@@ -8,16 +8,16 @@ class love_language:
 
     def words_of_affirmation(self):
         words_of_affirmation = [
-            "Say something nice to your partner! visit:https://www.verywellmind.com/words-of-affirmation-4783539 for more details.",
-            "Tell them how much you care! visit:https://liveboldandbloom.com/02/relationships/affirmation-love-language for more details.",
+            "Say something nice to your partner! visit:https://www.verywellmind.com/words-of-affirmation-4783539 for suggestions.",
+            "Tell your partner how much you care! visit:https://liveboldandbloom.com/02/relationships/affirmation-love-language for more details.",
             "Say the right thing, tell your partner you love them! visit:https://www.lovepanky.com/love-couch/better-love/words-of-affirmation for more details.",
             "Tell your partner you love them! visit:https://pairedlife.com/relationships/Words-of-Affirmations-Examples-Love-Language for more details.",
-            "Tell your partner how much you care about them, why not try writing it down? visit:https://www.moonpig.com/uk/ for more details.",
-            "Complement on their outfit!",
-            "Complement on their new hair!",
-            "Reassure your love for them!",
+            "Tell your partner how much you care about them! Why not try writing it down? visit:https://www.moonpig.com/uk/ for more details.",
+            "Complement your partner on their outfit!",
+            "Complement your partner on their hair!",
+            "Reassure your partner of your love for them!",
             "Validate their feelings!",
-            "Tell them how proud you are of your partner!"]
+            "Tell your partner how proud you are of them!"]
         suggestion = random.choice(words_of_affirmation)
         return suggestion
 
