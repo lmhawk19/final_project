@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIY Couples Therapy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="text-white">
+    <div class="container-fluid text-center my-5">
+        <h1>Our data</h1>
+        <p>Each word cloud below was generated using the suggestions from its own love language. Take a look at which words come up most often!</p>
+        <div class="word-cloud my-5">
+            {% for love_language, word_cloud in word_clouds.items() %}
+                <h3 class="pt-5">{{ love_language }}</h3>
+                {{ word_cloud|safe }}
+            {% endfor %}
+        </div>
+        <p>Ready to get some suggestions for your love language? <a href="/" class="link-light" style="white-space: nowrap;">Go back to home</a></p>
+    </div>
+</body>
+</html>

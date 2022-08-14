@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIY Couples Therapy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="text-white">
+    <div class="container-fluid text-center my-5">
+        <h1>DIY Couples Therapy</h1>
+        <p>Our randomised, love language-based suggestions are here to help you be better partners.<br>Click on the options below to explore suggestions for a particular love language.</p>
+        <div class="d-flex flex-wrap justify-content-center mb-3">
+            {% for love_language in love_languages %}
+                <a role="button" href="/languages/{{ love_language.name.lower().replace(' ', '_') }}" class="btn btn-outline-light d-inline-flex flex-column text-start m-2 p-0" style="width: 15.5rem;">
+                    <h5 class="m-3 text-center">{{ love_language.name }}</h5>
+                    <hr class="border-top opacity-100 w-100 m-0">
+                    <p class="m-3">{{ love_language.description }}</p>
+                </a>
+            {% endfor %}
+        </div>
+        <p class="mb-0">Still not sure from the descriptions what your love language is? <a href="https://5lovelanguages.com/quizzes/love-language" target="_blank" class="link-light" style="white-space: nowrap;">Complete the love language quiz</a></p>
+        <p>Want higher-level insights for each love language? <a href="/data" class="link-light" style="white-space: nowrap;">View our data</a></p>
+    </div>
+</body>
+</html>

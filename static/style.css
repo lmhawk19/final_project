@@ -1,10 +1,46 @@
-html, body {
-height: 100%;
+html {
+    height: 100%;
 }
 
 body {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    background: linear-gradient(to right, #9a98f1, #aaa7f4);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+    background-color: white;
+    color: #9a98f1;
+}
+
+.btn-outline-light hr {
+    border-color: white;
+    transition: border-color 0.15s;
+}
+
+.btn-outline-light:hover hr,
+.btn-outline-light:focus hr, {
+    border-color: #9a98f1;
+}
+
+.card-header {
+    background-color: #9897ed;
+}
+
+.form-control, .form-select {
+    background-color: #fff2;
+    color: white;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #fff2;
+}
+
+.word-cloud svg {
+    margin: -80px;
 }
