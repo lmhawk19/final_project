@@ -78,3 +78,4 @@ def add_suggestion(name, suggestion, category, url):
             cursor.execute('INSERT INTO suggestions (love_language_id, content, url, suggester) VALUES (%s, %s, %s, %s)',
                            [category, suggestion, url, name])
             connection.commit()
+
